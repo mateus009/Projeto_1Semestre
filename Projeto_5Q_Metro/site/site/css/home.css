@@ -1,0 +1,280 @@
+html, body, form{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color:black;
+}
+li{
+	display:inline;
+}
+
+body header{
+    height: 70px;
+    width: 100%;
+}
+
+.a{
+	font-size:20px;
+	color:white;
+	font-family:sans-serif;
+	text-decoration:none;
+	padding-left:1%;
+}
+
+.dropbtn {
+    background-color:transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 70px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+	border-radius:5%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	font-size:20	px;
+}
+
+.dropdown-content a:hover {
+	background-color: gray;
+	border-radius:5%;
+	}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:white ;
+	color:black;
+	border-radius:5%;
+}
+
+.nav{
+    height:70px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    z-index: 5;
+    display: inline;
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+}
+
+.logomenu{
+    width: 70px;
+    height: 70px;
+}
+
+.corpo{
+    background-color: darkgray;
+    height:25%;
+    width: 100%;
+}
+
+/*.divex{
+    width: 100%;
+    height: 3%;
+    background-color:darkgray;
+    opacity: 0.3;
+    position:relative;
+    z-index: 10;
+}*/
+
+.icone{
+    width: 10%;
+    height: 55%;
+	float:left;
+	margin-left:0%;
+	margin-top:2%;
+	font-size:14px;
+	color:black;
+	border-radius:8%;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.icone2{
+    height: 48%;
+	float:left;
+	margin-left:5%;
+	margin-right:0%;
+	margin-top:2%;
+	border-radius:10%;
+	
+	
+}
+
+.header-site{
+    height: 70%;
+    width: 100%;
+    opacity: 0.5;
+    background-image: url(../img/marginalpinheiros.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer{
+	display:black;
+	background-color:black;
+	width:100%;
+	height:15%;
+}
+.footer{
+	color:white;
+	font-size:14px;
+	font-family:arial;
+}
+.footer2{
+	margin-left:60%;
+	color:white;
+	float:left;
+	font-size:14px;
+	font-family:arial;
+}
+
+.divfoot{
+	float:left;
+	margin-top:5%;
+	margin-left:2%;
+}
+/* modal fundo */
+.modal {
+    display: none; /* none por padrão */
+    position: fixed; /* fixa o modal na tela */
+    z-index: 20; /* fica no topo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */ 
+    background-color: rgb(0,0,0); /* cor de fundo */
+    background-color: rgba(0,0,0,0.4); /* preto com opacidade */
+}
+
+.modal2 {
+    display: none; /* none por padrão */
+    position: fixed; /* fixa o modal na tela */
+    z-index: 20; /* fica no topo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* cor de fundo */
+    background-color: rgba(0,0,0,0.4); /* preto com opacidade */
+}
+/* Modal conteudo/Box */
+.modal-content {
+    background-color:aliceblue;
+    margin: 6% auto; /* 15% do topo e centralizado */
+    padding: 20px;
+    border: 1px solid #888;
+    height:70%;
+    width: 70%; /* pode ser mais ou menos de 70% dependendo da tela */
+}
+.modal-cadastro{
+	background-color:aliceblue;
+    margin: 6% auto; /* 15% do topo e centralizado */
+    padding: 20px;
+    border: 1px solid #888;
+    height:75%;
+    width: 50%; /* pode ser mais ou menos de 70% dependendo da tela */
+}
+
+
+.modalCadastro {
+    display: flex;
+    margin: 6% auto;
+	flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.modalCadastro #corpo {
+    display: inherit;
+    flex-direction: column;
+    border-top: 1px solid black;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.modalCadastro #corpo 
+#txtNome,
+#txtLogin,
+#txtSenha,
+#txtConfirmarSenha
+{
+    margin-bottom: 15px;
+    padding:5px 0;
+    width: 400px;
+}
+
+.modalCadastro #corpo #dropDownList {
+    width: 200px;
+    padding: 5px 0;
+}
+
+.modalCadastro #btnConfirmar, #lblErro{
+    margin: auto;
+}
+
+.modalCadastro #btnConfirmar {
+    padding:10px 0;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* botao feichar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+}
+.feichar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .feichar:hover,
+    .feichar:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }

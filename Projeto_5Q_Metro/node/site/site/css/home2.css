@@ -1,0 +1,42 @@
+html,body,form{
+	margin:0;
+	padding: 0;
+	border: 0;
+
+	min-height: 100vh;
+}
+
+body form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body form header{
+	height: 195px;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+body form #corpo{
+	flex-grow: 1;
+	height: 100%;
+	width: 100%;
+	display: inherit;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #dcdee2;
+}
+
+body form #corpo .box{
+	width: 25%;
+	height: 300px;
+	text-align: center;
+	padding: 20px 10px;
+	border-right: 1px solid black;
+	border-left:1px solid black;
+}
+
+body form #corpo .box #btnUm,#btnDois,#btnTres{
+	padding: 10px 40px;
+}

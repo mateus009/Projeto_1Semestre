@@ -1,0 +1,94 @@
+﻿.div{
+    background-color: lightgray;
+    height: 50%;
+    width: 40%;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+
+video {
+    position: absolute;
+    right: 0;/*AJUSTAR A POSIÇÃO DO VIDEO DE FUNDO ORIZONTAL*/
+    bottom: 0;/*AJUSTAR A POSIÇÃO DO VIDEO NA VERTICAL*/
+    z-index: -1000;/*DEIXAR A DIV NAO TRANPARENTE*/
+}
+
+
+
+label, input{
+    background-color: white;
+    height: 8%;
+    width: 35%;
+   /* margin-bottom: 1%;*/
+    margin-left: 15%;
+    margin-top: 7%;
+    
+}
+
+button{
+    background-color: gray;
+    height: 10%;
+    width: 35%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+
+button:hover {
+	border: outset;
+    background-color: cadetblue;
+    color: gainsboro;
+}
+
+#se {
+position:absolute;
+top: 42%;
+left :37.2%;
+height:50%;
+width:40%; }
+
+#se1 {
+position:absolute;
+top: 50%;
+left :43%;
+height:40%;
+width:40%; }
+
+
+#but{
+position:absolute;
+top:10%;
+left:37.2%;
+height:50%;
+width:40%;
+margin-top:40%}
+
+#d {position:absolute;
+top: 32%;
+left :37.2%;
+height:50%;
+width:40%; }
+
+.div1 {
+   background-color: lightgray;
+   
+ height: 50%;
+   
+ width: 40%;
+   
+ border-radius: 5%;
+    
+margin: 0 auto;
+   
+margin-top: 10%; 
+}
+
+#erro {position:absolute;
+top:28%;
+left:37.2%;
+width:30%;
+font-size:150%;
+}

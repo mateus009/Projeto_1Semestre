@@ -1,0 +1,97 @@
+body form #main{
+	display: inherit;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+    
+
+label, input{
+    background-color: white;
+    height: 8%;
+    width: 35%;
+   /* margin-bottom: 1%;*/
+    margin-left: 15%;
+    margin-top: 7%;
+    
+}
+
+button{
+    background-color: gray;
+    height: 10%;
+    width: 35%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+
+button:hover {
+	border: outset;
+    background-color: cadetblue;
+    color: gainsboro;
+}
+
+#se {
+position:absolute;
+top: 35%;
+left :37.2%;
+height:20%;
+width:40%; }
+
+#se1 {
+position:absolute;
+top: 43%;
+left :37.2%;
+height:20%;
+width:40%; }
+
+#ID1 {
+position:absolute;
+top: 30.4%;
+left :27.3%;
+height:20%;	
+width:40.6%; }
+
+#cargos1{
+position:absolute;
+top:61%;
+left:37.2%;
+height:10%;
+width:10%;}
+
+
+
+#aviso{
+position:absolute;
+top:10%;
+left:37.2%;
+height:10%;
+width:30%;
+}
+
+#d {position:absolute;
+top: 22%;
+left :37.2%;
+height:50%;
+width:40%; }
+
+.div {
+   background-color: lightgray;
+   
+ height: 65%;
+   
+ width: 25%;
+   
+ border-radius: 5%;
+    
+margin: 0 auto;
+   
+margin-top: -10%; 
+}
+
+
+.div1 {
+margin-top:10%;
+margin-left: 0%;
+height:70%;
+width:100%;}

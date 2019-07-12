@@ -1,0 +1,81 @@
+.div1{
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    margin-top: 2%;
+}
+
+.div2{
+    background-color: ghostwhite;
+    height:40%;
+    width: 100%;
+}
+.div3{
+    
+    width: 30%;
+    height: 60%;
+    background-color: gainsboro;
+    float: left;
+    margin-left:3%;
+    margin-bottom: 5%;
+}
+
+.div3:hover{
+    float: left;
+    margin: auto 0;
+    margin-left: 3%;
+    margin-bottom: 5%;
+    border-radius: 20%;
+}
+
+.text3e1{
+    color: black;
+    font-size: 25px;
+    margin: 0 auto;
+}
+.text3e1:hover{
+    color: darkblue;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+
+.text3e2{
+    color: black;
+    font-size: 25px;
+    margin: 0 auto;
+}
+.text3e2:hover{
+    color: darkblue;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.text3e3{
+    color: black;
+    font-size: 25px;
+    margin: 0 auto;
+}
+.text3e3:hover{
+    color: darkblue;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+
+.header-site{
+    height: 60%;
+    width: 100%;
+    background-image: url(../img/dentro2.png);
+    background-position: center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.imagen{
+    height: 50%;
+    width: 20%;
+    margin-left: 43%;
+    margin-top: 5%;
+}

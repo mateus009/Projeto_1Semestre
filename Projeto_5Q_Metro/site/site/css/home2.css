@@ -1,0 +1,91 @@
+html, body, form{
+	/*zerando valores de todos elementos pais*/
+	margin:0;
+	padding:0;
+	border: 0;
+
+/*	cada um dos elementos vai ocupar a tela toda, assim eu posso manipular os elementos filhos do form do jeito que eu quiser, conseguindo
+	saber onde começa e termina a viewport*/
+	min-height: 100vh;
+}
+
+body form{
+	display:flex;/*Aplicando flexbox no container, display do CSS 3 para eu poder mexer no layout do site com facilidade*/
+	flex-direction: column;/*Todos os elementos filhos do form irão ficar um sobre o outro, igual a uma coluna*/
+}
+
+body form header{
+	border-bottom:1px solid black;
+	height: 70px;
+}
+
+#logomenu{
+	height: 70px;
+	width: 70px;
+}
+
+#dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    /*padding: 16px;*/
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 70px;
+    width: 150px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:active .dropdown-content {
+    display: block;
+}
+
+.dropdown:active #dropbtn {
+    background-color: #3e8e41;
+}
+
+body form #corpo{
+	border:1px solid black;
+	flex-grow: 1;/*Esse código faz com que o elemento ocupe todo o restante da página, o que sobra vira o tamanho dele*/
+}
+
+body form .header-site{
+    height: 300px;
+    width: 100%;
+    opacity: 0.5;
+    background-image: url(../img/marginalpinheiros.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body form footer{
+	border-top:1px solid black;	
+	height: 100px;
+}
