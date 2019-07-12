@@ -1,0 +1,50 @@
+html,body {
+	margin:0;
+	padding: 0;
+	border:0;
+
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+body{
+	display: flex;/*Aplicando flexbox*/
+	justify-content: center;/*Centraliza na horizontal*/
+	align-items: center;/*Centraliza na vertical*/
+	background-image: url(../img/fundoLogin.jpg);
+	background-size: cover;
+}
+
+body form{
+	height: 350px;
+	width: 400px;
+	background-color: white;
+	display: inherit;/*herda o display flex*/
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	flex-direction: column;/*os itens dentro vão ficar um embaixo do outro como se fosse um bloco*/
+}
+
+body form #main{
+	display: inherit;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+body form #main #txtLogin,#txtSenha{
+	margin-bottom: 15px;
+	width: 200px;
+}
+
+body form #main #btnEntrar{
+	padding:5px 10px;
+	width: 150px;
+}
+
+body form img{
+	height: 100px;
+	width: 100px;
+	margin-bottom: 20px;
+}

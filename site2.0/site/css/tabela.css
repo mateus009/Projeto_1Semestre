@@ -1,0 +1,31 @@
+#meio {
+	background-color:gray;
+	min-width:150px;
+	width:41%;
+	height:30%;
+	position:fixed;
+	top:30%;
+	left:30%;
+}
+.tremeselect{
+background-color:red;}
+
+.vagao{
+min-width:80px;
+min-height:20px;
+height:20%;
+float:left;
+margin-top:5%;
+}
+.vagau{
+width:4%;
+height:3%;
+
+}
+.label{background-color:red;
+margin-top:10%;
+font-size:25px;
+float:left;
+}
+
+	

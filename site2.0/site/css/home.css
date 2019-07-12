@@ -1,0 +1,55 @@
+﻿table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+td:hover{
+	color:black;
+}
+
+#tabela-hov:hover{
+	color:black;
+}
+#pega{
+	background:#022649;
+}	
+#label-legenda{
+}
+#dropvagao {
+    float: left;
+    background-color: darkgray;
+    font-weight: bold;
+    border: solid;
+    -webkit-appearance:none;
+}
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding:8px;
+	border-color:black;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding:8px;
+	border-color:black;
+}
+
+tr:nth-child(even) {
+    background-color: #18497a;
+	color:white;
+}
+
+tr:nth-child(odd) {
+    background-color: #022649;
+	color:white;
+}
+
+.backImg{
+    height: 270px;
+    width: 100%;
+    background-image: url(../img/metro.jpg);
+    background-position: center;
+    background-size: cover;
+}

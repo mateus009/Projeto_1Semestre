@@ -1,0 +1,261 @@
+html, body, form{
+	/*zerando valores de todos elementos pais*/
+	margin:0;
+	padding:0;
+	border: 0;
+
+/*	cada um dos elementos vai ocupar a tela toda, assim eu posso manipular os elementos filhos do form do jeito que eu quiser, conseguindo
+	saber onde começa e termina a viewport*/
+	min-height: 100vh;
+}
+
+body form{
+	display:flex;/*Aplicando flexbox no container, display do CSS 3 para eu poder mexer no layout do site com facilidade*/
+	flex-direction: column;/*Todos os elementos filhos do form irão ficar um sobre o outro, igual a uma coluna*/
+}
+
+#logoIcon{
+	height: 50px;
+	width: 50px;
+    padding: 0;
+}
+
+/* Css para estilizar os 3 botões da dropdown */
+#btnCadUsu, #btnCadTrens{
+    border:0;
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    color: #777;
+}
+
+#btnCadUsu:hover, #btnCadTrens:hover, #sair:hover{
+    background-color: #e7e7e7;
+    color: black;
+}
+
+#btnSair{
+    color: #777;
+    width:100%;
+    text-align:left;
+}
+
+#btnSair:hover {
+	color: black;
+}
+
+
+/* Imagem de fundo que fica abaixo do cabeçalho */
+
+
+/* Corpo central da página, onde se encontra os dois botões principais */
+#main{
+	border-top: 1px solid black;
+	flex:1 200px;/*Esse código faz com que o elemento ocupe todo o restante da página, o que sobra vira o tamanho dele*/
+    width: 100%;
+	display: inherit;
+	justify-content: center;
+	align-items: center;
+}
+
+#main div{
+    margin: 0 20px 0 20px;
+}
+
+#main div button{
+    width: 300px;
+	font-size:20px;
+	padding: 20px 0 20px 0;
+	cursor: pointer;
+}
+
+#main div #btnGrafico{
+    margin-right: 15px;
+}
+
+/* Rodapé */
+footer{
+	border-top:1px solid black;	
+	height: 90px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: #262626;
+}
+
+footer p{
+	margin: 8px 0;
+}
+
+/* modal fundo */
+#myModal1,#myModal3, #myModal4 {
+    display: none; /* none por padrão */
+    position: fixed; /* fixa o modal na tela */
+    z-index: 50; /* fica no topo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */ 
+    background-color: rgb(0,0,0); /* cor de fundo */
+    background-color: rgba(0,0,0,0.4); /* preto com opacidade */
+    
+}
+#myModal2 {
+    display: none; /* none por padrão */
+    position: fixed; /* fixa o modal na tela */
+    z-index: 10; /* fica no topo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* cor de fundo */
+    background-color: rgba(0,0,0,0.4); /* preto com opacidade */
+}
+
+
+/* Modal conteudo/Box */
+/* Estilo da modal do gráfico */
+#modal-grafico {
+    /*background-color:aliceblue;*/
+    margin: 6% auto; /* 15% do topo e centralizado */
+    padding: 20px;
+    border: 1px solid #888;
+    height: 70%;
+    width: 70%;
+    /* pode ser mais ou menos de 70% dependendo da tela */
+}
+#modal-grafico1 {
+    /*background-color:aliceblue;*/
+    margin: 6% auto; /* 15% do topo e centralizado */
+    padding: 20px;
+    border: 1px solid #888;
+    height: 70%;
+    width: 70%;
+    /* pode ser mais ou menos de 70% dependendo da tela */
+}
+
+/* Estilo da modal que tem as tabelas de arduinos e vagões */
+#modal-tabela {
+    /*background-color:aliceblue;*/
+    margin: 6% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    height:70%;
+    width: 70%;
+}
+
+/* Estilo da modal de cadastro do usuário */
+#modal-cadastro-usuario{
+    /*background-color:aliceblue;*/
+    margin: 6% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    height:80%;
+    width: 50%;
+    min-width: 300px;
+}
+
+#modalCadastro {
+    display: flex;
+    margin: 6% auto;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+#modalCadastro #corpo-cadastro {
+    display: inherit;
+    flex-direction: column;
+    border-top: 1px solid black;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+#modalCadastro #corpo-cadastro 
+#txtNome,
+#txtLogin,
+#txtSenha,
+#txtConfirmarSenha
+{
+    margin-bottom: 15px;
+    padding:5px 0;
+    width: 400px;
+}
+
+#modalCadastro #corpo-cadastro #dropDownList {
+    width: 200px;
+    padding: 5px 0;
+}
+
+#modalCadastro #btnConfirmar, #lblErro{
+    margin: auto;
+}
+
+#modalCadastro #btnConfirmar {
+    padding:10px 0;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo da modal de cadastro de trens e vagões */
+#modal-cadastro-trens {
+    /*background-color:aliceblue;*/
+    margin: 6% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    height:70%;
+    width: 70%;
+}
+.botao-sair{
+    background-color:transparent;
+}
+.botao-sair:hover {
+    background-color: #e7e7e7;
+}
+
+/* botao feichar */
+.close, .close2, .close3, .close4 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close2:hover, .close3:hover, .close4:hover,
+.close:focus, .close2:focus, .close3:focus, .close4:focus
+ {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#divao {/*div*/
+background-color:transparent;
+width:20%;
+height:15%;
+position:absolute;
+top:25%;
+left:20%;
+margin-left: 15%;
+padding: 1%;
+
+}
+#metro{/*div*/
+background-color:transparent;
+width:20%;
+height:20%;
+position:absolute;
+top:44.5%;
+left:15%;
+margin-left: 20%;
+padding: 1%;
+margin-top:1%;
+}
+
+hr{
+    padding: 2%;
+}
+
+
+
